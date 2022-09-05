@@ -1,0 +1,159 @@
+html { 
+    /*background-image: linear-gradient(to right,#ffffff, #000000);*/
+    background-color: #ffffff;
+    font-family: 'Rubik', sans-serif;
+  }
+  body{
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .row{
+    margin-top: 25px; 
+  }
+  ._col{
+    list-style-type: none;
+    font-family: 'Rubik', sans-serif;
+  }
+  ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color:#A8E2DB;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+  }
+  li {
+    float: left;
+  }
+  li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 60px;
+  }
+  li a:hover {
+    transition: 0.5s;
+    background-color: #73ffef;
+  }
+  img{
+    height: 90px;
+    width: 90px;
+  }
+  .m_col{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+  }
+  /*cronometro----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  .container{
+    padding: 20px;
+    font-size: 40px;
+    width: 570px;
+    background-color: #73ffef;
+    border-radius: 35px;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+  }
+  .iniciar{
+    background-color: rgb(88, 86, 86);
+    margin-left: 60px;
+  }
+  .iniciar:hover{
+    background-color: rgb(28, 138, 28);
+    transition: all 0.5s;
+    transform: scale(1.1);
+  }
+  .iniciar:not(:hover){
+    background-color: rgb(88, 86, 86);
+    transition: all 0.5s;
+    transform: scale(1.0);
+  }
+  .parar{
+    background-color: rgb(88, 86, 86);
+  }
+  .parar:hover{
+    background-color: rgb(230, 29, 29);
+    transition: all 0.5s;
+    transform: scale(1.1);
+  }
+  .parar:not(:hover){
+    background-color: rgb(88, 86, 86);
+    transition: all 0.5s;
+    transform: scale(1.0);
+  }
+  .resetar{
+    background-color: rgb(88, 86, 86);
+  }
+  .resetar:hover{
+    background-color: rgb(32, 32, 32);
+    transition: all 0.5s;
+    transform: scale(1.1);
+  }
+  .resetar:not(:hover){
+    background-color: rgb(88, 86, 86);
+    transition: all 0.5s;
+    transform: scale(1.0);
+  }
+  #btn{
+    padding: 10px 15px 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 20px;
+    font-size: 29px;
+    color: #ffffff;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+  }
+  .tempo{
+    font-size: 70px;
+    padding: 0px 120px 0px 105px;
+  }
+  /*megasena----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  .btn_sorte{
+    background-color: rgb(150, 146, 146);
+    font-size: 40px;
+    font-family: 'Rubik', sans-serif;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 30px 10px 10px 10px;
+    color:#ffffff;
+  }
+  .btn_sorte:hover{
+    background-color: #73ffef;
+    transform: scale(1.1);
+    transition: 1.5s;
+    color:black;
+  }
+  .btn_sorte:not(:hover){
+    transform: scale(1.0);
+    transition: 1.5s;
+  }
+  /*index----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  .paragrafo{
+    width: 500px;
+    font-size: 35px;
+    background-color: #73ffef;
+    padding: 10px;
+    border-radius: 25px;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+  }
+  /*cara ou coroa----------------------------------------------------------------------------------------------------------------------------------------------------------*/

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <title>Site ExpoBentinho</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <ul class="cabeçalho">
+        <li><a href="index.html"><img src="185038_home_house_icon.png"></a></li>
+        <li><a href="crono.html"><img src="172560_stopwatch_icon.png"></a></li>
+        <li><a href="flip.html"><img src="coin.png"></a></li>
+        <li><a href="megasena.html" style="background-color:#73ffef;"><img src="3209281_control_drag_mix_random_shuffle_icon.png"></a></li>
+    </ul>
+    <div class="row">
+    <div class="fachada">
+        <div class="l_col">
+        </div>
+        <div class="m_col">
+            <div class="box">
+                <button class="btn_sorte">Clique para sortear Mega-Sena</br><img src="9517511_dice_gambling_game_luck_play_icon.png"></button>
+
+    <script>
+
+        let button = document.querySelector("button")
+        button.onclick = sorteiaNumeros
+
+        function sorteia() {
+
+            return Math.round(Math.random() * 100)
+
+        }
+
+        function sorteiaNumeros() {
+
+            let megaSena = []
+            let numero = 1
+
+            while(numero <= 6) {
+
+                let numeroAleatorio = sorteia()
+                let achou = false
+
+                if(numeroAleatorio !== 0 && numeroAleatorio <= 60) {
+
+                    for(posicao = 0; posicao < megaSena.length; posicao++) {
+
+                        if(megaSena[posicao] == numeroAleatorio) {
+
+                            achou = true
+                            break
+                        }
+                    }
+
+                    if(achou == false) {
+
+                        megaSena.push(numeroAleatorio)
+                        numero++
+                    }
+
+                }
+
+            }
+
+            alert("Os números da sorte são: " + megaSena)
+        }
+
+    </script>    
+            
+            
+        </div>
+    </div>
+    </div>
+    </div>
+
+    
+</body>
+</html>
